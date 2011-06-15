@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR//DTD S2Container 2.4//EN"
+    "http://www.seasar.org/dtd/components24.dtd">
+<components>
+	<include path="s2jdbc.dicon"/>
+	<component name="loginContext" class="org.seasar.s2jaas.S2LoginContext" instance="prototype">
+		<property name="configuration">loginConfiguration</property>
+	</component>
+	<component name="loginConfiguration" class="org.seasar.s2jaas.SimpleConfiguration" instance="singleton">
+		<property name="loginModule">"org.seasar.s2jaas.SimpleDatabaseLoginModule"</property>
+		<property name="options">
+			#{"sql": "SELECT * FROM users WHERE account=? AND password=?"}
+		</property>
+	</component>
+</components>
