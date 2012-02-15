@@ -70,4 +70,8 @@ public class SimpleConfiguration extends Configuration{
 	public void setOptions(Map<String, Object> options) {
 		this.options = options;
 	}
+
+	@Override
+	public void refresh() {
+	}
 }
