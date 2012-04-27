@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.seasar.s2jaas</groupId>
 	<artifactId>s2jaas</artifactId>
-	<version>0.1.0</version>
+	<version>0.1.1-SNAPSHOT</version>
 
         <properties>
                 <maven.compile.source>1.5</maven.compile.source>
